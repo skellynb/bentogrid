@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family:'DMSans' ;
+    src: url(./assets/fonts/static/DMSans-Medium.ttf ) format('truetype');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family:'DMSans' ;
+    src: url(./assets/fonts/static/DMSans-MediumItalic.ttf ) format('truetype');
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family:'DMSans' ;
+    src: url(./assets/fonts/static/DMSans-Regular.ttf )format('truetype');
+    font-style: normal;
+  }
+  body{
+   
+    font-family: "DMSans", sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;   
+  }
+
+  .container{
+    display: grid;
+    height: 1000px;
+    width: 1000px;
+    transform-origin: center center;
+    grid-template-columns:200px 200px 200px 200px;
+    grid-template-rows: repeat(4, 200px);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto; /* to centralise on my webpage */
+    margin-right: auto; /* to centralise on my webpage */
+  }
+
+  
+  @media (max-aspect-ratio: 1/1) { /* Adjust scaling for portrait-oriented screens */
+    .container {
+      transform: scale(calc(100vh / 800px)); /* Scale based on viewport height */
+    }
+  }
+
+
+@media (min-aspect-ratio: 1/1) { /* Adjust scaling for landscape-oriented screens */
+    .container {
+      transform: scale(calc(100vw / 800px)); /* Scale based on viewport width */
+    }
+  }
+  .container > * {
+   border-radius: 10px;
+  }
+
+  .create{
+    background: #faeee2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1;   
+    letter-spacing: -2px;
+
+  }
+
+  .create, .h3{
+    font-size: 28px;
+    font-weight: lighter;
+
+  }
+
+  .img1 {
+    display: block;
+    max-width: 80%; 
+    max-height: 80%;
+    object-fit: contain;
+    margin-right: 10px;
+
+  }
+
+  .create h3 span em{
+    color: #7856ca;
+  }
+
+  .social{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    background: #7651dc;
+    max-height: 300px;
+    align-content: center;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    align-items: center;
+    line-height: 1;
+    letter-spacing: -2px;
+
+   
+  }
+
+  .social .over{
+    font-size: 16px;
+   
+  }
+  
+  .social p span{
+    color: #fdcc6e;
+  }
+
+  .img2{
+    width: 170px;
+    margin: 10px;
+  }
+  
+  .schedule{
+  grid-column-start: 4;
+  grid-row-end: span 3;
+  background: #DCD1FC;
+  
+}
+  
+.sche{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  overflow: hidden; /*to crop the pic*/
+  position: relative; /*to crop the pic*/
+  line-height: 1;
+    
+}
+  .schedule, .h4{
+    font-size: 26px;
+    color: #242128;
+   
+  }
+
+  
+
+  .schedule p{
+    font-size: 14px;
+    color: #454056;
+    font-weight: bold;
+  }
+  
+  .img3 {
+    height: 290px;
+    width: 290px;
+    
+  }
+
+  .write{
+    grid-row-start: 3;
+    grid-row-end: span 2;
+    background: #FFCC69;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    color: #2E210E;
+    gap: 20px;
+    padding: 20px;
+    line-height: 1;
+    letter-spacing: -2px;
+  
+  
+  }
+
+  .img4 {
+    
+    width: 170px ;
+    height: 250px;
+   
+    
+  }
+
+  .img5{
+    width: 215px;
+    height: 150px;
+    margin-left: 20px;
+    
+    }
+  
+  .manage{
+    font-size: 24px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  gap: 10px;
+  overflow: hidden; /*to crop the pic*/
+  position: relative; /*to crop the pic*/
+  line-height: 1;
+  }
+
+  .grow{
+    grid-column-start: 3;
+   grid-column-end: span 2;
+   background: #7651dc;
+   display: flex;
+   align-items: center;
+   color: #fff;
+   font-size: 26px;
+   padding: 20px;
+ 
+
+  }
+  
+  .img8{
+    display: block;
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .Maintain{
+    background:  #FFCC69;
+    font-size: 27px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden; /*to crop the pic*/
+  position: relative; /*to crop the pic*/
+
+  }
+
+
+  .img6{
+    width: 160px;
+    height: 160px;
+  }
+
+  .faster{ 
+      background: #fff;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 15px;
+   
+  }
+
+  .img7{
+    width: 150px;
+    height: 80px;
+  }
+
+  .fas{
+    font-size: 12px;
+  
+  }
+  
